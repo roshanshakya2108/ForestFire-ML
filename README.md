@@ -1,16 +1,37 @@
-# lab-flask
+# Ridge Regression Flask App
 
-<!-- ![image](https://user-images.githubusercontent.com/115451707/196919992-edcfea8b-e3f6-4f35-9398-43be66b5622d.png) -->
+This repository contains a Flask-based web application for predicting data points using a Ridge Regression model. The app loads a pre-trained Ridge Regression model and a Standard Scaler (both stored in `.pkl` files) to make predictions based on user input.
 
+## Features
 
-To run flask application 
+- User-friendly web interface built with Flask.
+- The app predicts outcomes using a Ridge Regression model based on various input features like temperature, humidity, wind speed, rain, etc.
+- The data is first preprocessed using a standard scaler before making predictions.
+  
+## Project Structure
 
-```
-python app.py
-```
+- `app.py`: Main Flask application file that includes route definitions and model prediction logic.
+- `models/ridge.pkl`: Pre-trained Ridge Regression model stored as a pickle file.
+- `models/scaler.pkl`: Standard Scaler used for normalizing input data stored as a pickle file.
+- `templates/index.html`: HTML template for the homepage.
+- `templates/home.html`: HTML template for displaying prediction results.
 
+## Installation and Setup
 
-To access your flask application open new tab in and paste the url:
-```
-https://{your_url}.pwskills.app:5000/
-```
+### Prerequisites
+
+Ensure that you have the following installed:
+
+- Python 3.x
+- Flask
+- Scikit-learn
+- Pandas
+- NumPy
+- Pickle
+
+### Installation Steps
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name

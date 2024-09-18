@@ -1,4 +1,4 @@
-# Ridge Regression Flask App
+# Forest Fire ML Flask App
 
 This repository contains a Flask-based web application for predicting data points using a Ridge Regression model. The app loads a pre-trained Ridge Regression model and a Standard Scaler (both stored in `.pkl` files) to make predictions based on user input.
 
@@ -29,9 +29,3 @@ Ensure that you have the following installed:
 - NumPy
 - Pickle
 
-### Installation Steps
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
